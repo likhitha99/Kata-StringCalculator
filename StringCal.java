@@ -28,8 +28,9 @@ public class StringCal
         if(numbers.length()> 1)
         {
         //findNegative(numbers);
-        String al = numbers.replaceAll("[&,:;=\\\\?@#|/'<>.^*()%!]+","");
-        String[] a= al.split("");
+        String al = numbers.replaceAll("[&,:;=\\\\?@#|/'<>.^*()%!]+"," ");
+        al=al.trim();
+        String[] a= al.split("\\s+");
         int[] b=new int[a.length];
        
         try{
