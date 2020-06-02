@@ -29,7 +29,7 @@ public class StringCal
         {
         //findNegative(numbers);
         String al = numbers.replaceAll("[&,:;=\\\\?@#|/'<>.^*()%!]+"," ");
-        al = numbers.replaceAll(System.lineSeparator()," ");
+        al = al.replaceAll(System.lineSeparator()," ");
         al=al.trim();
         String[] a= al.split("\\s+");
         int[] b=new int[a.length];
